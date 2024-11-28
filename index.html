@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body>
+    <center>
+    <form>
+        <h3>Register</h3>
+        username: 
+        <input id="name" type="text" placeholder="Name"><br><br>
+        email:
+        <input type="email" placeholder="Email" required><br><br>
+        phone number:
+        <input type="tel" placeholder="Phone" required><br><br>
+        <button id="submit" type="button">Submit</button>
+    </form>
+</center>
+    <script>
+        document.getElementById("submit").addEventListener("click", () => {
+            alert("Successful Registration !");
+        });
+    </script>
+</body>
+</html>
